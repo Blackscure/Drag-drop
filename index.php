@@ -15,8 +15,7 @@
 <body>
     <!-------------Dragzone--------->
 <h6>Tables</h6><br>
-<div class="block">
-
+<div class="block-1">
     <img class="circle" id="dragelement1" ondragstart="dragStart(event)">
     <img class="square" id="dragelement2" ondragstart="dragStart(event)">
     <img src="https://img.icons8.com/ios/100/000000/kite-shape.png" id="dragelement3" ondragstart="dragStart(event)">
