@@ -26,3 +26,8 @@ function dragStartDropZone(event) {
     id = event.target.id;
     current = document.getElementById(id);
 }
+
+//moveble
+$( function() {
+    $( "#dropzone" ).draggable();
+  } );
