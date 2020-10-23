@@ -1,5 +1,6 @@
 var id;
 var copy;
+var current;
 var i = 0;
 
 function allowDrop(event) {
@@ -9,20 +10,24 @@ function allowDrop(event) {
 function dragStart(event) {
     id = event.target.id;
     let originalElement = document.getElementById(id)
+
     copy = originalElement.cloneNode(true);
     copy.id =  id + ++i;
+    copy.dragStart = dragStartDropZone(event);
+    current = copy;
 }
 
 function drop(event) {
     event.preventDefault();
-    event.target.append(copy);
+    event.target.append(current);
 }
 
 function dragStartDropZone(event) {
     id = event.target.id;
+    current = document.getElementById(id);
 }
 
-function dropDropZone(event) {
-    event.preventDefault();
-    event.target.append(event.getElementById);
-}
+//moveble
+$( function() {
+    $( "#dropzone" ).draggable();
+  } );

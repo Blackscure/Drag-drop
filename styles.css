@@ -73,11 +73,15 @@ body{
 }
 
  
-
+/*--------dragle----
 .block{
   width: 100px;
+  height: 150px;
+  padding: 0.5em;
   display: inline-block;
+  
 }
+*/
 
 
 .product_drag_area{
