@@ -244,19 +244,15 @@
       display: flex;
       height: 30vh;
   }
-  .circle{
-      border: 2px solid black;
-      border-radius: 50px;
-      width: 40;
-      padding: 20px;
-      height: 40;
-      font-size: 30px;
-      cursor: move;
-      /* margin-left: 20px; */
-      margin-right: 10px;
+ 
+    .circle {
+      height: 50px;
+      width: 50px;
+      background-color: #555;
+      border-radius: 50%;
       z-index: 2;
-     
-  }
+    }
+    
   .rectangle{
       border: 1px solid black;
       width: 40;
