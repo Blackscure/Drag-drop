@@ -14,83 +14,70 @@
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    
-    </head>
-    <body>
-        <!------Nav bar------->
-        <body class="container-fuid">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <!-- <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-               -->
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active ml-5">
-                      <a class="nav-link text-primary" href="#">Home/ <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="service nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Service Area:Dining Room
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Dining</a>
-                        <a class="dropdown-item" href="#">Front End</a>
-                      </div>
-                    </li>
-                  </ul>
-                  <div class="service mr-2 text-primary"><i class="fa fa-plus">Add Service Area</i></div>
-                  <div class="publish mr-2">Publish</div>
-                  <form class="form-inline my-2 my-lg-0 mr-5">
-                    <button class="btn btn-primary my-2 my-sm-0 save" type="submit"><span class="save-text">Save</span></button>
-                  </form>
+</head>
+<body class="container-fuid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active ml-5">
+              <a class="nav-link text-primary" href="#">Home/ <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="service nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Service Area:Dining Room
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Dining</a>
+                <a class="dropdown-item" href="#">Front End</a>
+              </div>
+            </li>
+          </ul>
+          <div class="service mr-2 text-primary"><i class="fa fa-plus">Add Service Area</i></div>
+          <div class="publish mr-2">Publish</div>
+          <form class="form-inline my-2 my-lg-0 mr-5">
+            <button class="btn btn-primary my-2 my-sm-0 save" type="submit"><span class="save-text">Save</span></button>
+          </form>
+        </div>
+      </nav>
+      <div class="row">
+          <div class="col-md-3 tables-main">
+              <div class="tables">
+                <div class="row">
+                    <div class="col-xs-4"></div>
+                    <div class="col-xs-8 table-row mt-2">
+                        <h6 class="mt-2"><u><strong>Tables</strong></u></h6>
+                        <div class="table-shapes">
+                            <div class="circle draggable"></div>
+                            <div class="rectangle draggable"></div>
+                            <div class="diamond draggable"></div>
+                        </div>
+
+                        <div class="barriers mt-4">
+                            <h6><u><strong>Barriers & Labels</strong> </u></h6>
+                            <div class="barrier-shape">
+                                <div class="barrier-bold mb-2 draggable"></div>
+                                <div class="barrier-hollow mb-2 draggable"></div>
+                                <div class="barrier-label draggable"><span>Label</span></div>
+                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </nav>
-        <!-------------Dragzone--------->
-        <h6>Tables</h6><br>
-        <div id="block-1">
-            <img 
-                class="circle" 
-                id="dragelement1"
-                ondragstart="dragStart(event)" 
-            />
-            <img 
-                class="square" 
-                id="dragelement2"
-                ondragstart="dragStart(event)"
-            />
-            <img 
-                src="https://img.icons8.com/ios/100/000000/kite-shape.png" 
-                id="dragelement3"
-                ondragstart="dragStart(event)"
-            />
-        <!-- <img class="diamond" id="dragelement3" ondragstart="dragStart(event)">-->
-        </div>
-        <h6>Barriers & Lables</h6>
-        <img 
-            class="rectangle" 
-            id="dragelement4" 
-            ondragstart="dragStart(event)"
-        ><br>
-        <img 
-            class="thickLine" 
-            id="dragelement5" 
-            ondragstart="dragStart(event)"
-        ><br>
-        <img 
-            class="lightLine" 
-            id="dragelement6" 
-            ondragstart="dragStart(event)"
-        ></img>
-        <!-------dropezone------->
-        <div 
-            id="dropzone" 
-            ondragover="allowDrop(event)" 
-            ondrop="drop(event)"
-        >
-            <div class="product_drag_area"></div>  
-        </div>
-        <script type="text/javascript" src="script.js"></script>
-    </body>
+
+                
+              </div>
+          </div>
+          <div class="col-md-9 draw-area">
+            <div class="draw-box"></div>
+            
+
+              <!-- <canvas class="draw-box" height="800" width="800"></canvas> -->
+          </div>
+
+      </div>
+
+ 
+    <script src="script.js"></script>
+</body>
 </html>
